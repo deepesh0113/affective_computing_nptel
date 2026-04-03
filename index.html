@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Affective Computing Assignments</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
+      referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5C7800ZKQ2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5C7800ZKQ2');
+  </script>
+
+</head>
+
+<body>
+  <img src="home_bg.jpg" alt="Background Wallpaper"
+    style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
+  <div class="container">
+    <h1><u>Affective Computing Assignments</u></h1>
+    <h1><u>(Practice purposes)</u></h1>
+
+    <div id="year-select">
+      <label for="year">Select Year:</label>
+      <select id="year">
+        <option value="">-- Select Year --</option>
+      </select>
+    </div>
+
+    <div id="assignment-select" style="display: none;">
+      <label for="assignment">Choose Assignment:</label>
+      <select id="assignment">
+        <option value="">-- Select Assignment --</option>
+      </select>
+      <button id="load-assignment">Load</button>
+    </div>
+    <button id="practice-mode" onclick="window.open('practice.html', '_blank')">
+      Launch Practice Exam
+    </button>
+    <div id="quiz"></div>
+    <div id="result"></div>
+  </div>
+  <button id="theme-toggle" aria-label="Toggle Theme" class="theme-button"></button>
+  <script src="main.js"></script>
+</body>
+
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affective Computing Assignments</title>
+    
+    <style>
+        /* Make the image container full-width */
+        .image-container {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden; /* Prevents overflow if image dimensions go out of bounds */
+        }
+
+        /* Make the image responsive */
+        .responsive-image {
+            width: 100%; /* The image will take up 100% of the container's width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Prevents space below the image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="3ae71475796053.5c572468b05fe.jpg" alt="Your Image" class="responsive-image">
+    </div>
+
+</body>
+</html> -->
