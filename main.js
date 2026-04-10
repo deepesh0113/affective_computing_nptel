@@ -1,6 +1,6 @@
 const years = [
     {
-        name: "2025",
+        name: "2026",
         assignments: [
             {
                 name: "Assignment 1",
