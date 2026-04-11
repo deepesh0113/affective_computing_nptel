@@ -1,5 +1,220 @@
 const years = [
     {
+        name: "2025",
+        assignments: [
+            {
+                name: "Assignment 1",
+                questions: [
+                    {
+                        "text": "Affective computing focuses solely on the recognition of emotions without any attempt to synthesize or simulate emotional expressions.",
+                        "options": ["True", "False"],
+                        "answer": 1,
+                        "explanation": "Affective computing includes both recognizing and simulating emotions. True is incorrect because it ignores the synthesis aspect."
+                    },
+                    {
+                        "text": "Which of the following data modalities is least likely to be used for emotion recognition?",
+                        "options": ["Heart Rate Variability (HRV)", "Speech intonation", "Weather patterns", "Facial expressions"],
+                        "answer": 2,
+                        "explanation": "Weather patterns are unrelated to human emotions. HRV, speech, and facial expressions are directly linked to emotional states."
+                    },
+                    {
+                        "text": "Thermal cameras can be effective for affect sensing because:",
+                        "options": [
+                            "They capture changes in heat patterns associated with emotional states",
+                            "They have high resolution for RGB-based emotion analysis",
+                            "They are designed for real-time object tracking",
+                            "They directly measure neural activity"
+                        ],
+                        "answer": 0,
+                        "explanation": "Thermal cameras detect heat variations caused by emotional changes. Other options are incorrect because they describe unrelated features."
+                    },
+                    {
+                        "text": "Analyzing multiple data streams simultaneously (e.g., combining facial expressions, voice tone, and physiological signals) improves the accuracy of emotion recognition systems.",
+                        "options": ["True", "False"],
+                        "answer": 0,
+                        "explanation": "Combining multiple modalities increases accuracy. False is incorrect because single data sources are less reliable."
+                    },
+                    {
+                        "text": "Wearable devices like smartwatches can assist in affect sensing by:",
+                        "options": [
+                            "Detecting changes in motion and location",
+                            "Tracking physiological metrics like heart rate and skin conductivity",
+                            "Providing augmented reality overlays",
+                            "Capturing high-resolution facial expressions"
+                        ],
+                        "answer": 1,
+                        "explanation": "Wearables track physiological signals related to emotions. Other options are not directly related to affect sensing."
+                    },
+                    {
+                        "text": "Which of the following sensors is commonly used for detecting physiological signals related to emotions?",
+                        "options": ["Gyroscope", "Galvanic Skin Response (GSR)", "Ultrasonic sensor", "Barcode reader"],
+                        "answer": 1,
+                        "explanation": "GSR measures skin conductivity linked to emotional arousal. Other sensors do not measure emotional physiology."
+                    },
+                    {
+                        "text": "Which of the following is an ethical concern in affective computing?",
+                        "options": [
+                            "High computational cost",
+                            "Misinterpretation of emotional data",
+                            "Limited bandwidth for sensor data transfer",
+                            "Lack of compatibility with legacy hardware"
+                        ],
+                        "answer": 1,
+                        "explanation": "Misinterpreting emotions can lead to wrong decisions and harm users. Other options are technical issues, not ethical concerns."
+                    },
+                    {
+                        "text": "What is the primary purpose of the MACH system?",
+                        "options": [
+                            "To analyze environmental data",
+                            "To provide analytics on user communication behavior",
+                            "To monitor physical health",
+                            "To replace human recruiters in interviews"
+                        ],
+                        "answer": 1,
+                        "explanation": "MACH analyzes communication behavior. Other options describe unrelated purposes."
+                    },
+                    {
+                        "text": "What ethical concern might arise with the use of systems like MACH?",
+                        "options": [
+                            "Over-reliance on hardware performance",
+                            "Privacy concerns regarding facial data collection",
+                            "Limited availability in rural areas",
+                            "High training cost for users"
+                        ],
+                        "answer": 1,
+                        "explanation": "Collecting facial data raises privacy issues. Other options are not ethical concerns."
+                    },
+                    {
+                        "text": "What is the primary goal of emotion-aware interfaces in user experience design?",
+                        "options": [
+                            "To create complex and visually appealing designs",
+                            "To ensure content aligns with the user's emotional state to avoid overwhelming them",
+                            "To focus solely on functional aspects of a product",
+                            "To prioritize system efficiency over user satisfaction"
+                        ],
+                        "answer": 1,
+                        "explanation": "Emotion-aware interfaces adapt to users' emotions for better experience. Other options ignore emotional adaptation."
+                    }
+                ]
+            },
+            {
+                name: "Assignment 2",
+                questions: [
+                    {
+                        "text": "Which type of emotion is primarily recognized in the stimuli?",
+                        "options": ["Induced emotion", "Perceived emotion", "None of the given", "A and B"],
+                        "answer": 1,
+                        "explanation": "Perceived emotion refers to what observers identify in stimuli. Induced emotion is what the viewer personally feels, so it is different."
+                    },
+                    {
+                        "text": "Which model makes annotation easier for classifying emotions during data collection?",
+                        "options": ["Categorical Model", "Valence-Arousal-Dominance (VAD) model", "None of the given", "A and B"],
+                        "answer": 1,
+                        "explanation": "VAD provides continuous dimensions, making annotation easier and flexible. The categorical model is rigid with fixed labels."
+                    },
+                    {
+                        "text": "In the Circumplex Model, which emotion belongs to Low Arousal and Positive Valence?",
+                        "options": ["Frustrated", "Delighted", "Content", "Tired"],
+                        "answer": 2,
+                        "explanation": "Content is calm (low arousal) and pleasant (positive valence). Others either have high arousal or negative valence."
+                    },
+                    {
+                        "text": "Dominance allows better differentiation of emotions overlapping in the VA model.",
+                        "options": ["True", "False"],
+                        "answer": 0,
+                        "explanation": "Dominance adds a third dimension to separate similar emotions. False is incorrect because VA alone may overlap emotions."
+                    },
+                    {
+                        "text": "A set of facial actions is specific to a particular emotion.",
+                        "options": ["True", "False"],
+                        "answer": 0,
+                        "explanation": "Facial Action Coding System links specific muscle movements to emotions. False is incorrect because expressions are not random."
+                    },
+                    {
+                        "text": "Which of the following is/are a result of individual variability in emotions?",
+                        "options": [
+                            "Accumulation of emotions over time",
+                            "Cultural bias",
+                            "Cognitive appraisal",
+                            "All of the above"
+                        ],
+                        "answer": 3,
+                        "explanation": "All factors influence how individuals experience emotions. Other options are partial, not complete."
+                    },
+                    {
+                        "text": "In Emotion Design, which of the following is responsible for the initial impression of a product?",
+                        "options": ["Behavioral", "Visceral", "Reflective", "All of the above"],
+                        "answer": 1,
+                        "explanation": "Visceral design focuses on appearance and first impression. Behavioral and reflective come later."
+                    },
+                    {
+                        "text": "In the context of emotion recognition models, which model categorizes emotions into discrete, distinct categories or labels?",
+                        "options": ["Categorical model", "VAD model", "Universal model", "Dynamic model"],
+                        "answer": 0,
+                        "explanation": "Categorical model uses fixed emotion labels like happy, sad. VAD uses dimensions instead."
+                    },
+                    {
+                        "text": "What is the primary distinction between perceived emotions and induced emotions?",
+                        "options": [
+                            "Perceived emotions are universal, while induced emotions are culturally influenced.",
+                            "Perceived emotions are consciously experienced, while induced emotions are subconscious reactions.",
+                            "Perceived emotions are the emotions others observe in an individual, while induced emotions are intentionally expressed.",
+                            "Perceived emotions are the emotions an individual believes they are experiencing, while induced emotions are emotions intentionally triggered by external stimuli."
+                        ],
+                        "answer": 3,
+                        "explanation": "Perceived emotion is what a person thinks they feel, while induced emotion is caused by external stimuli. Other options misinterpret definitions."
+                    },
+                    {
+                        "text": "Which of the following design level helps in improving the user-product interaction of a product?",
+                        "options": ["Visceral", "Behavioral", "Reflective", "None of the above"],
+                        "answer": 1,
+                        "explanation": "Behavioral design focuses on usability and interaction. Visceral is about looks, reflective is about meaning."
+                    }
+                ]
+            },
+            {
+                name: "Assignment 3",
+                
+            },
+            {
+                name: "Assignment 4",
+                
+            },
+            {
+                name: "Assignment 5",
+                
+            },
+            {
+                name: "Assignment 6",
+                
+            },
+            {
+                name: "Assignment 7",
+                
+            },
+            {
+                name: "Assignment 8",
+                
+            },
+            {
+                name: "Assignment 9",
+                
+            },
+            {
+                name: "Assignment 10",
+                
+            },
+            {
+                name: "Assignment 11",
+                
+            },
+            {
+                name: "Assignment 12",
+                
+            },
+        ]
+    },
+    {
         name: "2026",
         assignments: [
             {
