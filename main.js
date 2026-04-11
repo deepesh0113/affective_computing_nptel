@@ -799,117 +799,112 @@ const years = [
                 name: "Assignment 8",
                 questions: [
                     {
-                        text: "The fig tree bears fruits in times when animals do not have much access to food. In this context, it would be a good example of",
+                        text: "Skin Conductance (GSR/EDA) measures changes primarily due to:",
                         options: [
-                            "Least concern species",
-                            "Flagship species",
-                            "Extinct species",
-                            "Keystone species"
-                        ],
-                        answer: 3,
-                        explanation: "Keystone species have a disproportionately large effect on their ecosystem — fig trees sustain animals during food-scarce periods. Least concern is a conservation status, not ecological role. Flagship species are chosen for awareness, not ecosystem impact. Extinct species no longer exist."
-                    },
-                    {
-                        text: "The “subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce” is the definition of",
-                        options: [
-                            "Ecosystem",
-                            "Habitat",
-                            "Biome",
-                            "Biosphere"
-
-                        ],
-                        answer: 1,
-                        explanation: "A habitat provides all conditions and resources necessary for an organism’s survival and reproduction. Ecosystem includes interactions between biotic and abiotic components. Biome is a large ecological region. Biosphere is the global sum of all ecosystems."
-                    },
-                    {
-                        text: "Which of these correctly represents the process of habitat fragmentation and loss?",
-                        options: [
-                            "Original forest → Dissection → Perforation → Fragmentation → Attrition",
-                            "Original forest → Perforation → Dissection → Fragmentation → Attrition",
-                            "Original forest → Fragmentation → Dissection → Perforation → Attrition",
-                            "Original forest → Attrition → Fragmentation → Dissection → Perforation"
+                            "Sweat gland activity",
+                            "Body temperature",
+                            "Blood pressure",
+                            "Respiration depth"
                         ],
                         answer: 0,
-                        explanation: "This sequence shows gradual breaking up of large habitats into smaller, isolated patches. The real process begins with small cuts (dissection), then holes (perforation), then breakup (fragmentation), and finally disappearance (attrition)."
+                        explanation: "GSR measures sweat gland activity controlled by the nervous system. Other options are different physiological signals."
                     },
                     {
-                        text: "Soil formation is an example of",
+                        text: "In GSR signals, the fast, event-related component is called:",
                         options: [
-                            "Provisioning service",
-                            "Regulating service",
-                            "Cultural service",
-                            "Supporting service"
-                        ],
-                        answer: 3,
-                        explanation: "Supporting ecosystem services enable other services — e.g., soil formation supports plant growth. Provisioning gives tangible goods. Regulating controls climate, disease, etc. Cultural is non-material benefits."
-                    },
-                    {
-                        text: "Biological control of pest populations is an example of",
-                        options: [
-                            "Provisioning service",
-                            "Supporting service",
-                            "Regulating service",
-                            "Cultural service"
-
+                            "SCL (Skin Conductance Level)",
+                            "EDL (Electrodermal Level)",
+                            "SCR (Skin Conductance Response)",
+                            "ERV (Emotional Response Value)"
                         ],
                         answer: 2,
-                        explanation: "Regulating services maintain ecosystem balance, such as pest control, flood regulation, and pollination. Provisioning provides direct products. Supporting underpins all other services. Cultural relates to heritage or tourism."
+                        explanation: "SCR represents quick changes due to stimuli. SCL is slow baseline activity."
                     },
                     {
-                        text: "The acronym HIPPO does not include",
+                        text: "GSR can reveal whether the emotional state is positive or negative.",
                         options: [
-                            "Habitat loss",
-                            "Invasive species",
-                            "Pollination",
-                            "Pollution"
-                        ],
-                        answer: 2,
-                        explanation: "HIPPO = Habitat loss, Invasive species, Pollution, Population, Overexploitation — key biodiversity threats. Pollination is an ecological service, not a threat."
-                    },
-                    {
-                        text: "The tiger has a home range of several square kilometres, regulates the ecosystem through controlling herbivore populations and trophic cascades, and people come to tiger reserves to watch tigers. Thus, the tiger can be called as",
-                        options: [
-                            "Keystone species",
-                            "Umbrella species",
-                            "Flagship species",
-                            "All of the above"
-                        ],
-                        answer: 3,
-                        explanation: "Tiger is a Keystone species (regulates prey), an Umbrella species (protecting it safeguards others), and a Flagship species (symbol for conservation awareness)."
-                    },
-                    {
-                        text: "People come to Sessa orchid sanctuary in Arunachal Pradesh to witness orchids, which in this context would be classified as",
-                        options: [
-                            "Umbrella species",
-                            "Flagship species",
-                            "Keystone species",
-                            "Extinct species"
-
+                            "True",
+                            "False"
                         ],
                         answer: 1,
-                        explanation: "Flagship species are charismatic organisms that attract public attention and conservation funding. Umbrella species indirectly protect others by wide habitat needs. Keystone species are ecologically crucial, not necessarily attractive. Extinct species no longer exist."
+                        explanation: "GSR only measures arousal, not whether emotion is positive or negative."
                     },
                     {
-                        text: "Captive breeding is an example of",
+                        text: "Skin conductance responses (SCR) correspond to:",
                         options: [
-                            "In-situ conservation",
-                            "In-situ preservation",
-                            "Ex-situ conservation",
-                            "Ex-situ preservation"
+                            "Slow tonic changes in conductivity",
+                            "Rapid, event-related changes triggered by stimuli",
+                            "Changes due to respiration cycles",
+                            "Variations caused only by temperature"
                         ],
-                        answer: 2,
-                        explanation: "Ex-situ means “outside the natural habitat” — like zoos, botanical gardens, gene banks. In-situ is protecting species in their natural habitats. Preservation implies non-interference, not active conservation."
+                        answer: 1,
+                        explanation: "SCR reflects fast changes due to emotional stimuli. Slow changes are part of SCL."
                     },
                     {
-                        text: "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+                        text: "The most emotionally reactive sweat glands are located on:",
                         options: [
-                            "Very high",
-                            "Very low",
-                            "Medium",
-                            "Non-existent"
+                            "Forehead",
+                            "Knees",
+                            "Palms and soles",
+                            "Back"
                         ],
                         answer: 2,
-                        explanation: "Medium-threat areas have viable ecosystems that can still be restored or maintained. Very high may already be degraded. Very low or non-existent need less urgent intervention."
+                        explanation: "Palms and soles have highest sweat gland activity linked to emotions."
+                    },
+                    {
+                        text: "In EEG signals, alpha-band power has what relationship with cortical activity?",
+                        options: [
+                            "Direct (more alpha = more activity)",
+                            "Inverse (more alpha = less activity)",
+                            "No relationship",
+                            "Only positive emotions change alpha"
+                        ],
+                        answer: 1,
+                        explanation: "Higher alpha means lower brain activity (inverse relation)."
+                    },
+                    {
+                        text: "In multimodal emotion recognition, early fusion requires:",
+                        options: [
+                            "Combining classifier decisions",
+                            "Using only a single modality",
+                            "Late-stage hypothesis selection",
+                            "Synchronizing signals before concatenation"
+                        ],
+                        answer: 3,
+                        explanation: "Early fusion combines raw features, so signals must be synchronized first."
+                    },
+                    {
+                        text: "Slow fusion is beneficial because it:",
+                        options: [
+                            "Avoids all redundancy across modalities",
+                            "Assumes strict independence of cues",
+                            "Exploits correlations while relaxing synchronization requirements",
+                            "Works only with visual cues"
+                        ],
+                        answer: 2,
+                        explanation: "Slow fusion allows flexibility and uses relationships between modalities without strict timing."
+                    },
+                    {
+                        text: "The SEMAINE project aims to train a system that:",
+                        options: [
+                            "Engages in multimodal social interaction as a Sensitive Artificial Listener",
+                            "Predicts emotional valence using only speech",
+                            "Detects emotions using physiological sensors alone",
+                            "Generates emotional facial expressions automatically"
+                        ],
+                        answer: 0,
+                        explanation: "SEMAINE focuses on interactive systems that respond emotionally in conversations."
+                    },
+                    {
+                        text: "A challenge in multimodal affect data collection is:",
+                        options: [
+                            "Too many synchronized datasets exist",
+                            "Overabundance of annotated corpora",
+                            "Lack of available audio signals",
+                            "Getting spontaneous, subtle expressions with aligned modalities"
+                        ],
+                        answer: 3,
+                        explanation: "It is difficult to capture natural emotions across multiple modalities in sync."
                     }
                 ]
             },

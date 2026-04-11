@@ -630,15 +630,6 @@ const PRACTICE_QUESTIONS = [
         explanation: "ECG directly records electrical signals of the heart, making it more accurate than PPG."
     },
     {
-        text: "GSR can reveal whether the emotional state is positive or negative.",
-        options: [
-            "True",
-            "False"
-        ],
-        answer: 1,
-        explanation: "GSR shows arousal level only, not whether emotion is positive or negative."
-    },
-    {
         text: "Low HRV is typically associated with:",
         options: [
             "Relaxation",
