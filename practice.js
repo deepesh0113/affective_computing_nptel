@@ -1279,6 +1279,1106 @@ const PRACTICE_QUESTIONS = [
         ],
         answer: 0,
         explanation: "Real-world variability and noise make perfect accuracy very difficult."
+    },
+    {
+      "text": "Affective computing focuses solely on the recognition of emotions without any attempt to synthesize or simulate emotional expressions.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Affective computing includes both recognizing and simulating emotions. True is incorrect because it ignores the synthesis aspect."
+    },
+    {
+      "text": "Which of the following data modalities is least likely to be used for emotion recognition?",
+      "options": ["Heart Rate Variability (HRV)", "Speech intonation", "Weather patterns", "Facial expressions"],
+      "answer": 2,
+      "explanation": "Weather patterns are unrelated to human emotions. HRV, speech, and facial expressions are directly linked to emotional states."
+    },
+    {
+      "text": "Thermal cameras can be effective for affect sensing because:",
+      "options": [
+        "They capture changes in heat patterns associated with emotional states",
+        "They have high resolution for RGB-based emotion analysis",
+        "They are designed for real-time object tracking",
+        "They directly measure neural activity"
+      ],
+      "answer": 0,
+      "explanation": "Thermal cameras detect heat variations caused by emotional changes. Other options are incorrect because they describe unrelated features."
+    },
+    {
+      "text": "Analyzing multiple data streams simultaneously (e.g., combining facial expressions, voice tone, and physiological signals) improves the accuracy of emotion recognition systems.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Combining multiple modalities increases accuracy. False is incorrect because single data sources are less reliable."
+    },
+    {
+      "text": "Wearable devices like smartwatches can assist in affect sensing by:",
+      "options": [
+        "Detecting changes in motion and location",
+        "Tracking physiological metrics like heart rate and skin conductivity",
+        "Providing augmented reality overlays",
+        "Capturing high-resolution facial expressions"
+      ],
+      "answer": 1,
+      "explanation": "Wearables track physiological signals related to emotions. Other options are not directly related to affect sensing."
+    },
+    {
+      "text": "Which of the following sensors is commonly used for detecting physiological signals related to emotions?",
+      "options": ["Gyroscope", "Galvanic Skin Response (GSR)", "Ultrasonic sensor", "Barcode reader"],
+      "answer": 1,
+      "explanation": "GSR measures skin conductivity linked to emotional arousal. Other sensors do not measure emotional physiology."
+    },
+    {
+      "text": "Which of the following is an ethical concern in affective computing?",
+      "options": [
+        "High computational cost",
+        "Misinterpretation of emotional data",
+        "Limited bandwidth for sensor data transfer",
+        "Lack of compatibility with legacy hardware"
+      ],
+      "answer": 1,
+      "explanation": "Misinterpreting emotions can lead to wrong decisions and harm users. Other options are technical issues, not ethical concerns."
+    },
+    {
+      "text": "What is the primary purpose of the MACH system?",
+      "options": [
+        "To analyze environmental data",
+        "To provide analytics on user communication behavior",
+        "To monitor physical health",
+        "To replace human recruiters in interviews"
+      ],
+      "answer": 1,
+      "explanation": "MACH analyzes communication behavior. Other options describe unrelated purposes."
+    },
+    {
+      "text": "What ethical concern might arise with the use of systems like MACH?",
+      "options": [
+        "Over-reliance on hardware performance",
+        "Privacy concerns regarding facial data collection",
+        "Limited availability in rural areas",
+        "High training cost for users"
+      ],
+      "answer": 1,
+      "explanation": "Collecting facial data raises privacy issues. Other options are not ethical concerns."
+    },
+    {
+      "text": "What is the primary goal of emotion-aware interfaces in user experience design?",
+      "options": [
+        "To create complex and visually appealing designs",
+        "To ensure content aligns with the user's emotional state to avoid overwhelming them",
+        "To focus solely on functional aspects of a product",
+        "To prioritize system efficiency over user satisfaction"
+      ],
+      "answer": 1,
+      "explanation": "Emotion-aware interfaces adapt to users' emotions for better experience. Other options ignore emotional adaptation."
+    },
+    {
+      "text": "Which type of emotion is primarily recognized in the stimuli?",
+      "options": ["Induced emotion", "Perceived emotion", "None of the given", "A and B"],
+      "answer": 1,
+      "explanation": "Perceived emotion refers to what observers identify in stimuli. Induced emotion is what the viewer personally feels, so it is different."
+    },
+    {
+      "text": "Which model makes annotation easier for classifying emotions during data collection?",
+      "options": ["Categorical Model", "Valence-Arousal-Dominance (VAD) model", "None of the given", "A and B"],
+      "answer": 1,
+      "explanation": "VAD provides continuous dimensions, making annotation easier and flexible. The categorical model is rigid with fixed labels."
+    },
+    {
+      "text": "In the Circumplex Model, which emotion belongs to Low Arousal and Positive Valence?",
+      "options": ["Frustrated", "Delighted", "Content", "Tired"],
+      "answer": 2,
+      "explanation": "Content is calm (low arousal) and pleasant (positive valence). Others either have high arousal or negative valence."
+    },
+    {
+      "text": "Dominance allows better differentiation of emotions overlapping in the VA model.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Dominance adds a third dimension to separate similar emotions. False is incorrect because VA alone may overlap emotions."
+    },
+    {
+      "text": "A set of facial actions is specific to a particular emotion.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Facial Action Coding System links specific muscle movements to emotions. False is incorrect because expressions are not random."
+    },
+    {
+      "text": "Which of the following is/are a result of individual variability in emotions?",
+      "options": [
+        "Accumulation of emotions over time",
+        "Cultural bias",
+        "Cognitive appraisal",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All factors influence how individuals experience emotions. Other options are partial, not complete."
+    },
+    {
+      "text": "In Emotion Design, which of the following is responsible for the initial impression of a product?",
+      "options": ["Behavioral", "Visceral", "Reflective", "All of the above"],
+      "answer": 1,
+      "explanation": "Visceral design focuses on appearance and first impression. Behavioral and reflective come later."
+    },
+    {
+      "text": "In the context of emotion recognition models, which model categorizes emotions into discrete, distinct categories or labels?",
+      "options": ["Categorical model", "VAD model", "Universal model", "Dynamic model"],
+      "answer": 0,
+      "explanation": "Categorical model uses fixed emotion labels like happy, sad. VAD uses dimensions instead."
+    },
+    {
+      "text": "What is the primary distinction between perceived emotions and induced emotions?",
+      "options": [
+        "Perceived emotions are universal, while induced emotions are culturally influenced.",
+        "Perceived emotions are consciously experienced, while induced emotions are subconscious reactions.",
+        "Perceived emotions are the emotions others observe in an individual, while induced emotions are intentionally expressed.",
+        "Perceived emotions are the emotions an individual believes they are experiencing, while induced emotions are emotions intentionally triggered by external stimuli."
+      ],
+      "answer": 3,
+      "explanation": "Perceived emotion is what a person thinks they feel, while induced emotion is caused by external stimuli. Other options misinterpret definitions."
+    },
+    {
+      "text": "Which of the following design level helps in improving the user-product interaction of a product?",
+      "options": ["Visceral", "Behavioral", "Reflective", "None of the above"],
+      "answer": 1,
+      "explanation": "Behavioral design focuses on usability and interaction. Visceral is about looks, reflective is about meaning."
+    },
+    {
+      "text": "What type of emotional expression is typically characterized by exaggerated and scripted feelings to simulate real emotions?",
+      "options": ["Spontaneous expressions", "Acted expressions", "Authentic expressions", "Spontaneous nonverbal cues"],
+      "answer": 1,
+      "explanation": "Acted expressions are deliberately exaggerated and scripted. Spontaneous and authentic expressions are natural, not staged."
+    },
+    {
+      "text": "Which experimental design involves comparing different groups of participants who are exposed to varying conditions or stimuli?",
+      "options": ["Between-subject design", "Within-subject design", "Both A and B", "Correlational design"],
+      "answer": 0,
+      "explanation": "Between-subject design compares different groups. Within-subject uses the same participants, and correlational design does not involve controlled conditions."
+    },
+    {
+      "text": "When conducting research on emotion recognition, why is the inclusion of naturalistic stimuli important?",
+      "options": [
+        "It helps maintain consistent emotional expression across participants",
+        "It increases the realism and relevance of the research findings",
+        "It simplifies the emotion recognition process for participants",
+        "It minimizes ethical concerns in emotional manipulation"
+      ],
+      "answer": 1,
+      "explanation": "Naturalistic stimuli reflect real-world conditions, improving realism. Other options do not directly relate to research validity."
+    },
+    {
+      "text": "What is the purpose of presenting a neutral baseline film before showing emotional clips in a study?",
+      "options": [
+        "To establish a standard emotional state for all participants",
+        "To assess the baseline physiological signals",
+        "To make the participant feel neutral about the study",
+        "To ensure that the participant understands the instructions"
+      ],
+      "answer": 0,
+      "explanation": "A neutral baseline standardizes emotional state. Other options are secondary or unrelated purposes."
+    },
+    {
+      "text": "What kind of data can be collected while a participant is watching an emotional video clip?",
+      "options": [
+        "Physiological signals such as heart rate and skin conductivity",
+        "Audio-visual data through a webcam or camera",
+        "Both physiological signals and audio-visual data",
+        "Only self-reported emotions from the participant"
+      ],
+      "answer": 0,
+      "explanation": "Physiological signals are primary for internal emotional response. Other options are possible but not the main focus here."
+    },
+    {
+      "text": "What is the primary purpose of the Institutional Review Board (IRB) in human research studies?",
+      "options": [
+        "To ensure that research is conducted ethically and protects the welfare of human subjects",
+        "To analyze the scientific validity of research proposals",
+        "To recruit participants for experiments",
+        "To determine the funding for human research projects"
+      ],
+      "answer": 0,
+      "explanation": "IRB ensures ethical standards and participant safety. Other options are handled by different bodies."
+    },
+    {
+      "text": "Which of the following is NOT one of the categories of tools used in affective computing?",
+      "options": [
+        "Data collection tools",
+        "Signal analysis tools",
+        "Affective expression tools",
+        "Natural language processing tools"
+      ],
+      "answer": 2,
+      "explanation": "Affective expression tools are not a standard tool category. Others are commonly used in affective computing."
+    },
+    {
+      "text": "If you prefer a more customized approach to data annotation, what option do you have?",
+      "options": [
+        "Use prebuilt annotation tools exclusively",
+        "Write your own scripts for data annotation",
+        "Hire external annotators",
+        "Focus only on video and audio modalities"
+      ],
+      "answer": 1,
+      "explanation": "Custom scripts allow flexibility and control. Other options limit customization."
+    },
+    {
+      "text": "What is the primary function of data mining tools in affective computing?",
+      "options": [
+        "To collect raw data",
+        "To preprocess data",
+        "To analyze and understand emotions in the collected data",
+        "To annotate the data"
+      ],
+      "answer": 2,
+      "explanation": "Data mining extracts patterns and insights. Other options belong to earlier processing stages."
+    },
+    {
+      "text": "Which of the following tools is mentioned as a commonly used and simple tool for emotion expression in machines?",
+      "options": [
+        "WEKA",
+        "ICT Virtual Human Toolkit",
+        "ROS (Robotics Operating System)",
+        "SAM (Self-Assessment Manikin)"
+      ],
+      "answer": 3,
+      "explanation": "SAM is a simple tool for representing emotions. Other tools serve different purposes like ML or robotics."
+    },
+    {
+      "text": "Which frame serves as the reference frame for facial expression recognition?",
+      "options": [
+        "Starting frame of the sequence",
+        "Last frame of the sequence",
+        "Peak expression frame",
+        "Random frame"
+      ],
+      "answer": 2,
+      "explanation": "The peak expression frame shows the maximum intensity of emotion, making it the best reference. Other frames may not capture full expression."
+    },
+    {
+      "text": "Dynamic facial expressions share the transition duration.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Different expressions have different transition durations. True is incorrect because timing varies across emotions."
+    },
+    {
+      "text": "Which of the following is not an important step in conventional FER?",
+      "options": [
+        "Face detection",
+        "Feature extraction",
+        "Background analysis",
+        "Face landmark detection"
+      ],
+      "answer": 2,
+      "explanation": "Background analysis is not required in facial expression recognition. Other steps are essential for detecting and analyzing faces."
+    },
+    {
+      "text": "Temporal information is crucial for detecting micro-expressions.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Micro-expressions are very brief, so timing information is essential. False is incorrect because static images are insufficient."
+    },
+    {
+      "text": "What does FACS stand for?",
+      "options": [
+        "Facial Attribute Coding System",
+        "Facial Affect Coding System",
+        "Facial Action Coding System",
+        "Functional Action Coding System"
+      ],
+      "answer": 2,
+      "explanation": "FACS stands for Facial Action Coding System, which encodes facial muscle movements. Other options are incorrect expansions."
+    },
+    {
+      "text": "Which of the facial features require less storage?",
+      "options": [
+        "Both appearance and geometric",
+        "Appearance only",
+        "Geometric only",
+        "None of the above"
+      ],
+      "answer": 2,
+      "explanation": "Geometric features use key points and require less storage. Appearance features store pixel-level details, which are larger."
+    },
+    {
+      "text": "Sequential information helps in expression recognition.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Sequence captures changes over time, improving recognition. False is incorrect because static data misses motion."
+    },
+    {
+      "text": "Which of the following features do not provide motion information?",
+      "options": [
+        "Motion History Images (MHI)",
+        "Local Binary Patterns (LBP)",
+        "Histogram of Gradients (HOG)",
+        "Optical Flow"
+      ],
+      "answer": 1,
+      "explanation": "LBP captures texture, not motion. MHI, HOG, and Optical Flow include motion or gradient information."
+    },
+    {
+      "text": "The relative position of the persons in a group has no effect on the group-level affect.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Group positioning influences collective emotion perception. True is incorrect because spatial relations matter."
+    },
+    {
+      "text": "When dealing with subtle facial expressions, which of the following is not a setback?",
+      "options": [
+        "Self-occlusion",
+        "Illumination",
+        "Individual variability",
+        "Pose variation"
+      ],
+      "answer": 1,
+      "explanation": "Illumination can be adjusted and is less of a limitation compared to others. Self-occlusion, pose, and variability are major challenges."
+    },
+    {
+      "text": "Which of the following is true about emotional speech signals?",
+      "options": [
+        "Emotional speech always follows predictable patterns",
+        "Emotional speech can be conveyed through tone, rhythm, and loudness",
+        "Emotional speech is only expressed through content words",
+        "Emotional speech is always louder than neutral speech"
+      ],
+      "answer": 1,
+      "explanation": "Emotion is conveyed through tone, rhythm, and loudness. Other options are incorrect because emotional speech is not always predictable, word-based, or louder."
+    },
+    {
+      "text": "What is a key factor in determining the emotional tone of a speaker's voice?",
+      "options": [
+        "The pitch and modulation of the voice",
+        "The speed of speech",
+        "The presence of background music",
+        "The clarity of the speaker's pronunciation"
+      ],
+      "answer": 0,
+      "explanation": "Pitch and modulation directly reflect emotions. Other options have less influence on emotional tone."
+    },
+    {
+      "text": "Which of the following is a commonly used feature in speech emotion recognition?",
+      "options": [
+        "Mel-Frequency Cepstral Coefficients (MFCCs)",
+        "Linear Prediction Coefficients (LPCs)",
+        "Formant frequencies",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All listed features are widely used in speech analysis. Other options are correct individually but incomplete."
+    },
+    {
+      "text": "What does 'prosody' refer to in speech emotion recognition?",
+      "options": [
+        "The phonetic structure of speech",
+        "The rhythm, pitch, and intonation patterns in speech",
+        "The speaker's gender and age characteristics",
+        "The loudness of speech"
+      ],
+      "answer": 1,
+      "explanation": "Prosody refers to rhythm, pitch, and intonation. Other options describe different speech aspects."
+    },
+    {
+      "text": "Why is it important to analyze emotions in situations where people speak different languages, like in interrogations?",
+      "options": [
+        "To understand the emotional state of the speaker",
+        "To count how many languages are being spoken",
+        "To identify the speaker's name",
+        "To translate all words into one language"
+      ],
+      "answer": 0,
+      "explanation": "Emotion analysis works across languages and helps understand intent. Other options are unrelated."
+    },
+    {
+      "text": "Which of the following prosody-based features is used to measure the energy in an input acoustic signal?",
+      "options": [
+        "Loudness",
+        "Pitch",
+        "Speech rate",
+        "Formant frequency"
+      ],
+      "answer": 0,
+      "explanation": "Loudness represents signal energy. Other features measure frequency or timing, not energy."
+    },
+    {
+      "text": "What is the advantage of using pre-trained networks in speech analysis over hand-engineered features like MFCC?",
+      "options": [
+        "Pre-trained networks automatically extract features through deep learning",
+        "Hand-engineered features are more accurate",
+        "Pre-trained networks do not require data",
+        "Hand-engineered features work better for real-time analysis"
+      ],
+      "answer": 0,
+      "explanation": "Pre-trained networks learn features automatically. Other options are incorrect assumptions."
+    },
+    {
+      "text": "Which is the primary reason for using spectrograms in speech-based emotion recognition?",
+      "options": [
+        "To visualize the frequency content of the audio signal over time",
+        "To reduce the duration of the audio signal",
+        "To eliminate background noise in the signal",
+        "To make the signal easier to interpret in its raw form"
+      ],
+      "answer": 0,
+      "explanation": "Spectrograms show frequency vs time, helping analyze emotions. Other options are not their main purpose."
+    },
+    {
+      "text": "Which of the following machine learning techniques is commonly used in speech emotion analysis?",
+      "options": [
+        "Hidden Markov Models",
+        "K-means clustering",
+        "Linear regression",
+        "Decision tree only"
+      ],
+      "answer": 0,
+      "explanation": "HMMs are widely used for sequential speech data. Other methods are less suitable for temporal modeling."
+    },
+    {
+      "text": "In the speech synthesis example, how can one distinguish between disappointment and excitement in speech?",
+      "options": [
+        "By listening to differences in tone and emotional expression in the speech",
+        "By looking at the text being read aloud",
+        "By measuring pitch only",
+        "By analyzing background noise"
+      ],
+      "answer": 0,
+      "explanation": "Tone and expression reveal emotions clearly. Other options do not fully capture emotional differences."
+    },
+    {
+      "text": "The shape and placement of text significantly contribute to conveying emotion in design or communication.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Typography (shape and placement) affects emotional perception. False is incorrect because visual design strongly influences emotion."
+    },
+    {
+      "text": "Emotion representation in text is:",
+      "options": [
+        "Always straightforward and easily detectable without considering the surrounding context",
+        "Often complex and influenced by the surrounding context",
+        "Primarily dependent on the use of specific emotion words",
+        "A combination of linguistic features and contextual clues"
+      ],
+      "answer": 1,
+      "explanation": "Emotion in text depends heavily on context. Other options are incomplete or oversimplified."
+    },
+    {
+      "text": "How can cultural differences impact the interpretation of emotions in text?",
+      "options": [
+        "Cultural differences have no impact on emotion recognition",
+        "Cultural differences can lead to misunderstandings and misinterpretations of emotions",
+        "Cultural differences can enhance the understanding of emotions, as they provide diverse perspectives",
+        "Cultural differences are only relevant in face-to-face communication, not in text-based communication"
+      ],
+      "answer": 1,
+      "explanation": "Different cultures interpret emotions differently, causing misinterpretation. Other options ignore or overgeneralize the effect."
+    },
+    {
+      "text": "What is the significance of a high objective score for a word in SentiWordNet?",
+      "options": [
+        "The word is highly positive",
+        "The word is highly negative",
+        "The word is highly neutral",
+        "The word has a strong sentiment orientation"
+      ],
+      "answer": 2,
+      "explanation": "High objectivity means the word is neutral. Other options refer to sentiment polarity, not objectivity."
+    },
+    {
+      "text": "What is the primary objective of Bag-of-Words?",
+      "options": [
+        "To represent text as a numerical feature vector",
+        "To understand the grammatical structure of a text",
+        "To analyze the semantic relationships between words in a text",
+        "To identify the topic or theme of a text"
+      ],
+      "answer": 0,
+      "explanation": "Bag-of-Words converts text into numerical vectors. Other options involve grammar or semantics, which BoW ignores."
+    },
+    {
+      "text": "What is an n-gram?",
+      "options": [
+        "A statistical method for estimating the probability of a word",
+        "A technique for stemming words",
+        "A type of neural network architecture",
+        "A sequence of n consecutive words in a text"
+      ],
+      "answer": 3,
+      "explanation": "An n-gram is a sequence of consecutive words. Other options describe different NLP concepts."
+    },
+    {
+      "text": "How can part-of-speech tagging help in emotion recognition?",
+      "options": [
+        "It identifies the grammatical role of words in a sentence, which can provide clues about the intended emotion",
+        "It extracts keywords from a text",
+        "It identifies the topic of a text",
+        "It analyzes the semantic meaning of words"
+      ],
+      "answer": 0,
+      "explanation": "POS tagging shows how words function, helping infer emotion. Other options describe different NLP tasks."
+    },
+    {
+      "text": "Which model is better suited for handling rare words or out-of-vocabulary words?",
+      "options": ["Word2Vec", "FastText", "GloVe", "All are equally suited"],
+      "answer": 1,
+      "explanation": "FastText uses subword information, handling rare words better. Others rely on fixed vocabulary."
+    },
+    {
+      "text": "What does the IDF component in TF-IDF represent?",
+      "options": [
+        "The frequency of a term within a document",
+        "The total number of documents in the corpus",
+        "The importance of a term relative to the entire corpus",
+        "The number of times a term appears in a document multiplied by total terms"
+      ],
+      "answer": 2,
+      "explanation": "IDF measures how important a term is across all documents. Other options describe TF or incorrect definitions."
+    },
+    {
+      "text": "Basic statistics are computed around the labels assigned by different labelers in text-based emotion detection to arrive at a final emotional classification for a statement.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Aggregating multiple annotations improves reliability. False is incorrect because single labels may be biased."
+    },
+    {
+      "text": "Which of the following is the primary physiological indicator measured in Electrodermal Activity (EDA)?",
+      "options": [
+        "The electrical resistance of the skin",
+        "The amount of sweat produced by the skin",
+        "Heart rate variability",
+        "Brain wave activity"
+      ],
+      "answer": 0,
+      "explanation": "EDA measures skin conductance/resistance changes due to sweat gland activity. Other options relate to different physiological signals."
+    },
+    {
+      "text": "Heart rate variability is often reduced in individuals experiencing high stress.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "High stress reduces HRV due to autonomic imbalance. False is incorrect because stress typically lowers variability."
+    },
+    {
+      "text": "Which of the following is NOT a typical physiological marker for detecting emotions in the autonomic nervous system?",
+      "options": [
+        "Heart rate",
+        "Respiratory rate",
+        "Oxygen saturation",
+        "Skin temperature"
+      ],
+      "answer": 2,
+      "explanation": "Oxygen saturation is not commonly used for emotion detection. Other options are standard autonomic markers."
+    },
+    {
+      "text": "The Theta frequency band in EEG is commonly associated with deep relaxation and meditation states.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Theta waves are linked to relaxation and meditation. False is incorrect because this is well-established."
+    },
+    {
+      "text": "Which of the following emotions has been found to be correlated with heart rate?",
+      "options": ["Happiness", "Anger", "Sadness", "Surprise"],
+      "answer": 1,
+      "explanation": "Anger is strongly associated with increased heart rate. Other emotions may vary but are less consistently linked."
+    },
+    {
+      "text": "Why does heart rate increase during stressful situations, such as giving a presentation?",
+      "options": [
+        "The brain signals the heart to pump more blood due to perceived stress or importance",
+        "The heart automatically adjusts to any increase in oxygen levels",
+        "The brain reduces the heart rate to conserve energy",
+        "The brain disconnects from the heart during stressful events"
+      ],
+      "answer": 0,
+      "explanation": "Stress activates the sympathetic nervous system, increasing heart rate. Other options are incorrect explanations."
+    },
+    {
+      "text": "Which of the following is a more accurate method for measuring heart rate?",
+      "options": [
+        "Photoplethysmography (PPG)",
+        "Electrocardiogram (ECG)",
+        "Both are equally accurate",
+        "Neither"
+      ],
+      "answer": 1,
+      "explanation": "ECG directly measures electrical activity of the heart, making it more accurate. PPG is indirect."
+    },
+    {
+      "text": "How does posture affect heart rate during measurement?",
+      "options": [
+        "It does not affect heart rate",
+        "An uncomfortable posture may cause an increase in heart rate due to extra effort needed for stabilization",
+        "An uncomfortable posture decreases heart rate",
+        "Posture has only a minor effect on heart rate"
+      ],
+      "answer": 1,
+      "explanation": "Uncomfortable posture increases physical effort, raising heart rate. Other options ignore this effect."
+    },
+    {
+      "text": "What aspect of emotional state can heart rate measurements accurately estimate?",
+      "options": ["Valence", "Arousal", "Both valence and arousal", "Neither"],
+      "answer": 1,
+      "explanation": "Heart rate reflects arousal (intensity of emotion), not valence. Other options are incorrect."
+    },
+    {
+      "text": "Heart rate measurements can distinguish whether the arousal is caused by positive or negative emotion.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Heart rate shows arousal but cannot determine if emotion is positive or negative. True is incorrect."
+    },
+     {
+      "text": "Which of the following emotional states is typically associated with increased skin conductance?",
+      "options": ["Boredom", "Relaxation", "Stress", "Happiness"],
+      "answer": 2,
+      "explanation": "Stress increases skin conductance due to higher sweat gland activity. Boredom and relaxation lower arousal, while happiness is less consistently linked."
+    },
+    {
+      "text": "What is a common technique used to measure skin conductance?",
+      "options": [
+        "Electromyography (EMG)",
+        "Electroencephalography (EEG)",
+        "Functional Magnetic Resonance Imaging (fMRI)",
+        "Galvanic Skin Response (GSR)"
+      ],
+      "answer": 3,
+      "explanation": "GSR directly measures skin conductance. Other techniques measure muscles, brain waves, or brain imaging."
+    },
+    {
+      "text": "How can SCL and SCR be used to assess emotional arousal?",
+      "options": [
+        "Increased SCL and SCR indicate higher arousal",
+        "Decreased SCL and SCR indicate higher arousal",
+        "Increased SCL but decreased SCR indicate higher arousal",
+        "Decreased SCL but increased SCR indicate higher arousal"
+      ],
+      "answer": 0,
+      "explanation": "Higher arousal leads to increases in both SCL and SCR. Other options contradict physiological behavior."
+    },
+    {
+      "text": "What is the primary advantage of using the 10-20 system?",
+      "options": [
+        "It allows for easy comparison of EEG data across different studies",
+        "It reduces the number of electrodes needed",
+        "It increases spatial resolution",
+        "It eliminates the need for anatomical measurements"
+      ],
+      "answer": 0,
+      "explanation": "The 10-20 system standardizes electrode placement, enabling comparison. Other options are incorrect benefits."
+    },
+    {
+      "text": "Which frequency band is associated with deep sleep?",
+      "options": ["Alpha", "Beta", "Delta", "Theta"],
+      "answer": 2,
+      "explanation": "Delta waves are dominant during deep sleep. Other bands correspond to wakefulness or light sleep."
+    },
+    {
+      "text": "In a multimodal setting, each modality is expected to provide similar information.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Different modalities provide complementary, not identical, information. True is incorrect."
+    },
+    {
+      "text": "What is a major challenge in early feature fusion of multimodal data?",
+      "options": [
+        "Data alignment and synchronization issues",
+        "Increased computational complexity",
+        "Selection of appropriate feature extraction techniques",
+        "Lack of standardized evaluation metrics"
+      ],
+      "answer": 0,
+      "explanation": "Early fusion requires proper alignment of data streams. Other options are general challenges but not the main one."
+    },
+    {
+      "text": "Which fusion level is most suitable for modalities with different temporal resolutions?",
+      "options": [
+        "Early fusion",
+        "Intermediate fusion",
+        "Late fusion",
+        "All have the same effect"
+      ],
+      "answer": 2,
+      "explanation": "Late fusion handles different time scales independently. Early fusion requires synchronized data."
+    },
+    {
+      "text": "Which type of features does feature selection aim to eliminate?",
+      "options": [
+        "Descriptive features",
+        "Relevant features",
+        "Redundant features",
+        "Interactive features"
+      ],
+      "answer": 2,
+      "explanation": "Feature selection removes redundant or irrelevant features. Other options are useful features."
+    },
+    {
+      "text": "Slow fusion eliminates the synchronization requirement while taking advantage of correlations between modalities.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Slow fusion processes modalities separately while capturing relationships. False is incorrect."
+    },
+    {
+      "text": "What is the core concept of empathy?",
+      "options": [
+        "Recognizing and understanding the emotional states of others",
+        "Feeling pity for others in distress",
+        "Ignoring others' emotional states",
+        "Controlling others' emotions"
+      ],
+      "answer": 0,
+      "explanation": "Empathy involves understanding others' emotions. Pity is different, and ignoring or controlling emotions is incorrect."
+    },
+    {
+      "text": "The Uncanny Valley effect is most often observed when:",
+      "options": [
+        "A robot has human-like features but lacks certain human behaviors",
+        "A robot mimics human emotions accurately",
+        "A robot appears completely non-human",
+        "A robot displays behaviors that are distinctly mechanical"
+      ],
+      "answer": 0,
+      "explanation": "Uncanny Valley occurs when something looks human but behaves unnaturally. Other options do not create this effect."
+    },
+    {
+      "text": "Can empathy in robots and virtual agents be genuine?",
+      "options": [
+        "Yes, as long as the agent can process and respond to emotional signals",
+        "No, empathy in agents is always simulated and not truly felt",
+        "Yes, but only when humans are aware it is an agent",
+        "No, empathy in robots is irrelevant for effective interaction"
+      ],
+      "answer": 1,
+      "explanation": "Robots simulate empathy but do not truly feel emotions. Other options incorrectly assume genuine emotional experience."
+    },
+    {
+      "text": "What is the key focus of perspective-taking in the context of empathy?",
+      "options": [
+        "Understanding emotional state from physiological cues",
+        "Analyzing how the response will make the individual feel from their point of view",
+        "Modifying the emotional state of an individual",
+        "Ignoring the user's feelings"
+      ],
+      "answer": 1,
+      "explanation": "Perspective-taking means viewing the situation from another person's viewpoint. Other options do not reflect this."
+    },
+    {
+      "text": "What is the primary goal of empathy analysis in artificial empathy?",
+      "options": [
+        "To predict emotions without context",
+        "To understand the emotional state of the user and evaluate whether the interaction is empathetic",
+        "To generate responses only from physiological cues",
+        "To analyze only physiological cues"
+      ],
+      "answer": 1,
+      "explanation": "Empathy analysis considers both emotion and context. Other options ignore context or limit analysis."
+    },
+    {
+      "text": "The appearance of an embodied agent should be designed to match the specific characteristics of the target user to enhance empathy.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Matching user characteristics improves relatability and empathy. False is incorrect."
+    },
+    {
+      "text": "Which of the following best describes the role of lexical cues in empathy analysis?",
+      "options": [
+        "Physiological data",
+        "Text-based data used to analyze empathetic quality of interactions",
+        "Used only for emotion, not empathy",
+        "Visual and audio cues"
+      ],
+      "answer": 1,
+      "explanation": "Lexical cues are words/text used to analyze empathy. Other options confuse them with different data types."
+    },
+    {
+      "text": "What is one of the mediating factors that can affect the empathetic response of an observer?",
+      "options": [
+        "The agent's physical location",
+        "The mood of the observer",
+        "The agent's programming language",
+        "The time of day"
+      ],
+      "answer": 1,
+      "explanation": "Observer's mood strongly influences empathy. Other options have little direct effect."
+    },
+    {
+      "text": "What was the result of providing empathetic feedback in the virtual interview scenario?",
+      "options": [
+        "It increased stress",
+        "It had no effect",
+        "It reduced stress",
+        "It caused abandonment"
+      ],
+      "answer": 2,
+      "explanation": "Empathetic feedback helps reduce stress. Other options contradict observed outcomes."
+    },
+    {
+      "text": "The emotional state of the user is irrelevant when designing an embodied agent for a specific task.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "User emotion is important for effective interaction design. True is incorrect."
+    },
+    {
+      "text": "Learners' experiences with affective learning technologies involve both emotional responses and learning outcomes.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Affective learning considers both emotions and performance. False is incorrect because learning is influenced by emotions."
+    },
+    {
+      "text": "How does GazeTutor use eye-tracking data to improve learning?",
+      "options": [
+        "By identifying when students are struggling with a concept",
+        "By predicting students' future performance",
+        "By adapting the difficulty level of the tutoring content",
+        "By providing real-time feedback on attention and engagement"
+      ],
+      "answer": 0,
+      "explanation": "Eye-tracking helps detect confusion or struggle. Other options are indirect or not the primary function."
+    },
+    {
+      "text": "A machine that can anticipate future needs and adjust its behavior accordingly is at which level of adaptation?",
+      "options": ["Level 0", "Level 1", "Level 2", "Level 3"],
+      "answer": 3,
+      "explanation": "Level 3 represents predictive and adaptive behavior. Lower levels involve limited or no adaptation."
+    },
+    {
+      "text": "Camera can be used to monitor the heart rate of the user.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Cameras can estimate heart rate using remote photoplethysmography. False is incorrect."
+    },
+    {
+      "text": "What is empathy in the context of affective computing?",
+      "options": [
+        "The ability of a machine to understand and respond to human emotions",
+        "The ability of a machine to perform tasks independently",
+        "The ability of a machine to learn from experience",
+        "The ability of a machine to process large data"
+      ],
+      "answer": 0,
+      "explanation": "Empathy in AI refers to understanding and responding to emotions. Other options describe general AI abilities."
+    },
+    {
+      "text": "Tendency to provide human characteristics to non-lifelike artifacts is called:",
+      "options": [
+        "Polymorphism",
+        "Anthropomorphism",
+        "Skeuomorphism",
+        "Neumorphism"
+      ],
+      "answer": 1,
+      "explanation": "Anthropomorphism means assigning human traits to objects. Other terms refer to design or programming concepts."
+    },
+    {
+      "text": "Parallel empathy is characterized by:",
+      "options": [
+        "A strong emotional response to another person's feelings",
+        "A detached and objective perspective",
+        "The ability to understand and share feelings without being overwhelmed",
+        "A tendency to avoid emotional situations"
+      ],
+      "answer": 2,
+      "explanation": "Parallel empathy balances understanding and control. Other options describe different emotional responses."
+    },
+    {
+      "text": "User feedback ratings can be a metric for evaluating affective agents.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "User feedback reflects effectiveness and experience. False is incorrect."
+    },
+    {
+      "text": "Which of the following strategies can help to reduce negative affective states in learners?",
+      "options": [
+        "Increasing task difficulty",
+        "Providing immediate feedback",
+        "Creating a competitive environment",
+        "Ignoring learner emotions"
+      ],
+      "answer": 1,
+      "explanation": "Immediate feedback helps reduce frustration. Other options may increase stress or ignore emotions."
+    },
+    {
+      "text": "Cognitive empathy involves perceiving the emotions of the target in a logical manner.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Cognitive empathy focuses on logical understanding of emotions. False is incorrect."
+    },
+    {
+      "text": "A virtual assistant takes input in the form of text messages only.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Virtual assistants can take voice, text, and other inputs. True is incorrect because input is not limited to text."
+    },
+    {
+      "text": "Which of the following is NOT a part of the process for creating a virtual assistant as described in the lecture?",
+      "options": [
+        "Wake word detection",
+        "Automatic Speech Recognition (ASR)",
+        "Emotion detection in speech",
+        "Data encryption for privacy"
+      ],
+      "answer": 2,
+      "explanation": "Emotion detection is not a core step in basic virtual assistant creation. Other options are essential components."
+    },
+    {
+      "text": "It is acceptable to anthropomorphize emotional virtual agents as long as they provide useful emotional support to users.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Anthropomorphism is acceptable if it benefits users. False is incorrect."
+    },
+    {
+      "text": "An emotionally intelligent virtual assistant can help improve communication and reduce stress in the workplace by recognizing emotional cues from employees.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Recognizing emotions helps improve communication and reduce stress. False is incorrect."
+    },
+    {
+      "text": "In which domain can an emotionally intelligent virtual assistant help provide real-time emotional support and coping strategies?",
+      "options": [
+        "Healthcare",
+        "Customer service",
+        "Mental health and therapy",
+        "Entertainment"
+      ],
+      "answer": 2,
+      "explanation": "Mental health applications focus on emotional support. Other domains may use it but not primarily for coping strategies."
+    },
+    {
+      "text": "What is the main goal of using an emotionally intelligent virtual assistant in education?",
+      "options": [
+        "To replace teachers",
+        "To monitor students' grades",
+        "To identify when students need additional support and provide targeted feedback",
+        "To conduct exams"
+      ],
+      "answer": 2,
+      "explanation": "The goal is personalized support and feedback. Other options are not the main purpose."
+    },
+    {
+      "text": "The first step in the process of building an emotionally intelligent virtual assistant is to identify the language spoken by the user.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "The first step is not language identification; it involves system setup and input detection. True is incorrect."
+    },
+    {
+      "text": "What is the role of 'context' in an emotionally intelligent virtual assistant?",
+      "options": [
+        "To recognize emotion at all times",
+        "To understand the user's preferences and history for personalized responses",
+        "To determine intent regardless of emotion",
+        "To simply follow instructions without emotion"
+      ],
+      "answer": 1,
+      "explanation": "Context helps personalize responses using history and preferences. Other options ignore personalization."
+    },
+    {
+      "text": "What is the primary ethical concern related to privacy when developing emotionally intelligent virtual agents?",
+      "options": [
+        "The agent may not collect enough data",
+        "The agent may collect personal data without user consent",
+        "The agent may not process data accurately",
+        "The agent may share data only with medical professionals"
+      ],
+      "answer": 1,
+      "explanation": "Unauthorized data collection is a major ethical issue. Other options are not core privacy concerns."
+    },
+    {
+      "text": "How can emotional virtual agents help avoid bias in their responses to users?",
+      "options": [
+        "Using data from only one ethnic group",
+        "Ensuring training data is diverse and representative",
+        "Focusing on one language group",
+        "Ignoring cultural differences"
+      ],
+      "answer": 1,
+      "explanation": "Diverse data reduces bias. Other options increase bias or ignore diversity."
+    },
+    {
+      "text": "Privacy concerns in affective computing arise from:",
+      "options": [
+        "The collection and analysis of personal data",
+        "The potential for misuse of emotional information",
+        "The lack of transparency in AI decision-making",
+        "None of the above"
+      ],
+      "answer": 0,
+      "explanation": "Privacy concerns mainly arise from collecting and analyzing personal data. Other options are related issues but not the primary source."
+    },
+    {
+      "text": "Which of the following is not a potential ethical consideration that needs to be addressed?",
+      "options": [
+        "Emotional manipulation",
+        "Privacy",
+        "Emotional dependency",
+        "System accuracy"
+      ],
+      "answer": 3,
+      "explanation": "System accuracy is a technical concern, not an ethical one. Other options are key ethical issues."
+    },
+    {
+      "text": "Which of the following has a high level of privacy intrusion?",
+      "options": ["Audio jack", "WiFi", "Camera", "Bluetooth"],
+      "answer": 2,
+      "explanation": "Cameras capture visual personal data, making them highly intrusive. Others collect less sensitive data."
+    },
+    {
+      "text": "All mobile sensors capture the least amount of sensitive data.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Some sensors (like cameras and microphones) capture highly sensitive data. True is incorrect."
+    },
+    {
+      "text": "Which of the following sensing strategies is written wrongly in ascending order of privacy invasiveness?",
+      "options": [
+        "Microphone > WiFi > Accelerometer",
+        "GPS > Bluetooth > Screen Touch",
+        "WiFi > Gyroscope > Calls",
+        "Calls > Apps > Gyroscope"
+      ],
+      "answer": 3,
+      "explanation": "The order is incorrect because calls are more intrusive than apps and gyroscope. Other sequences are more reasonable."
+    },
+    {
+      "text": "What is the primary goal of anticipatory mobile computing?",
+      "options": [
+        "To predict user needs and proactively provide services",
+        "To optimize battery life",
+        "To enhance device security",
+        "To increase processing power"
+      ],
+      "answer": 0,
+      "explanation": "Anticipatory computing predicts user behavior and needs. Other options are secondary system goals."
+    },
+    {
+      "text": "From an ethics perspective, what is a significant concern regarding affect-sensing apps in relation to emotional dependency?",
+      "options": [
+        "User engagement",
+        "Privacy intrusion",
+        "Emotional manipulation",
+        "User addiction"
+      ],
+      "answer": 2,
+      "explanation": "Apps may manipulate emotions, creating dependency. Other options are related but not the main ethical concern here."
+    },
+    {
+      "text": "What is a potential ethical concern related to facial expression recognition?",
+      "options": [
+        "Privacy violations",
+        "Bias in recognition systems",
+        "Misinterpretation of emotions",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All listed issues are valid ethical concerns. Other options are incomplete individually."
+    },
+    {
+      "text": "It is possible to completely anonymize a user's personal information using algorithms.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Complete anonymization is very difficult due to re-identification risks. True is incorrect."
+    },
+    {
+      "text": "Who should be involved in shaping the ethical guidelines for affect-aware machines?",
+      "options": [
+        "Engineers only",
+        "Ethicists only",
+        "Users only",
+        "A combination of engineers, ethicists, users, and stakeholders"
+      ],
+      "answer": 3,
+      "explanation": "Ethical design requires input from multiple stakeholders. Other options are too limited."
     }
 ];
 
