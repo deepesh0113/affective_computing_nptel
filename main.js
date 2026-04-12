@@ -174,11 +174,203 @@ const years = [
             },
             {
                 name: "Assignment 3",
-                
+                questions: [
+    {
+      "text": "What type of emotional expression is typically characterized by exaggerated and scripted feelings to simulate real emotions?",
+      "options": ["Spontaneous expressions", "Acted expressions", "Authentic expressions", "Spontaneous nonverbal cues"],
+      "answer": 1,
+      "explanation": "Acted expressions are deliberately exaggerated and scripted. Spontaneous and authentic expressions are natural, not staged."
+    },
+    {
+      "text": "Which experimental design involves comparing different groups of participants who are exposed to varying conditions or stimuli?",
+      "options": ["Between-subject design", "Within-subject design", "Both A and B", "Correlational design"],
+      "answer": 0,
+      "explanation": "Between-subject design compares different groups. Within-subject uses the same participants, and correlational design does not involve controlled conditions."
+    },
+    {
+      "text": "When conducting research on emotion recognition, why is the inclusion of naturalistic stimuli important?",
+      "options": [
+        "It helps maintain consistent emotional expression across participants",
+        "It increases the realism and relevance of the research findings",
+        "It simplifies the emotion recognition process for participants",
+        "It minimizes ethical concerns in emotional manipulation"
+      ],
+      "answer": 1,
+      "explanation": "Naturalistic stimuli reflect real-world conditions, improving realism. Other options do not directly relate to research validity."
+    },
+    {
+      "text": "What is the purpose of presenting a neutral baseline film before showing emotional clips in a study?",
+      "options": [
+        "To establish a standard emotional state for all participants",
+        "To assess the baseline physiological signals",
+        "To make the participant feel neutral about the study",
+        "To ensure that the participant understands the instructions"
+      ],
+      "answer": 0,
+      "explanation": "A neutral baseline standardizes emotional state. Other options are secondary or unrelated purposes."
+    },
+    {
+      "text": "What kind of data can be collected while a participant is watching an emotional video clip?",
+      "options": [
+        "Physiological signals such as heart rate and skin conductivity",
+        "Audio-visual data through a webcam or camera",
+        "Both physiological signals and audio-visual data",
+        "Only self-reported emotions from the participant"
+      ],
+      "answer": 0,
+      "explanation": "Physiological signals are primary for internal emotional response. Other options are possible but not the main focus here."
+    },
+    {
+      "text": "What is the primary purpose of the Institutional Review Board (IRB) in human research studies?",
+      "options": [
+        "To ensure that research is conducted ethically and protects the welfare of human subjects",
+        "To analyze the scientific validity of research proposals",
+        "To recruit participants for experiments",
+        "To determine the funding for human research projects"
+      ],
+      "answer": 0,
+      "explanation": "IRB ensures ethical standards and participant safety. Other options are handled by different bodies."
+    },
+    {
+      "text": "Which of the following is NOT one of the categories of tools used in affective computing?",
+      "options": [
+        "Data collection tools",
+        "Signal analysis tools",
+        "Affective expression tools",
+        "Natural language processing tools"
+      ],
+      "answer": 2,
+      "explanation": "Affective expression tools are not a standard tool category. Others are commonly used in affective computing."
+    },
+    {
+      "text": "If you prefer a more customized approach to data annotation, what option do you have?",
+      "options": [
+        "Use prebuilt annotation tools exclusively",
+        "Write your own scripts for data annotation",
+        "Hire external annotators",
+        "Focus only on video and audio modalities"
+      ],
+      "answer": 1,
+      "explanation": "Custom scripts allow flexibility and control. Other options limit customization."
+    },
+    {
+      "text": "What is the primary function of data mining tools in affective computing?",
+      "options": [
+        "To collect raw data",
+        "To preprocess data",
+        "To analyze and understand emotions in the collected data",
+        "To annotate the data"
+      ],
+      "answer": 2,
+      "explanation": "Data mining extracts patterns and insights. Other options belong to earlier processing stages."
+    },
+    {
+      "text": "Which of the following tools is mentioned as a commonly used and simple tool for emotion expression in machines?",
+      "options": [
+        "WEKA",
+        "ICT Virtual Human Toolkit",
+        "ROS (Robotics Operating System)",
+        "SAM (Self-Assessment Manikin)"
+      ],
+      "answer": 3,
+      "explanation": "SAM is a simple tool for representing emotions. Other tools serve different purposes like ML or robotics."
+    }
+  ]
             },
             {
                 name: "Assignment 4",
-                
+                questions: [
+    {
+      "text": "Which frame serves as the reference frame for facial expression recognition?",
+      "options": [
+        "Starting frame of the sequence",
+        "Last frame of the sequence",
+        "Peak expression frame",
+        "Random frame"
+      ],
+      "answer": 2,
+      "explanation": "The peak expression frame shows the maximum intensity of emotion, making it the best reference. Other frames may not capture full expression."
+    },
+    {
+      "text": "Dynamic facial expressions share the transition duration.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Different expressions have different transition durations. True is incorrect because timing varies across emotions."
+    },
+    {
+      "text": "Which of the following is not an important step in conventional FER?",
+      "options": [
+        "Face detection",
+        "Feature extraction",
+        "Background analysis",
+        "Face landmark detection"
+      ],
+      "answer": 2,
+      "explanation": "Background analysis is not required in facial expression recognition. Other steps are essential for detecting and analyzing faces."
+    },
+    {
+      "text": "Temporal information is crucial for detecting micro-expressions.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Micro-expressions are very brief, so timing information is essential. False is incorrect because static images are insufficient."
+    },
+    {
+      "text": "What does FACS stand for?",
+      "options": [
+        "Facial Attribute Coding System",
+        "Facial Affect Coding System",
+        "Facial Action Coding System",
+        "Functional Action Coding System"
+      ],
+      "answer": 2,
+      "explanation": "FACS stands for Facial Action Coding System, which encodes facial muscle movements. Other options are incorrect expansions."
+    },
+    {
+      "text": "Which of the facial features require less storage?",
+      "options": [
+        "Both appearance and geometric",
+        "Appearance only",
+        "Geometric only",
+        "None of the above"
+      ],
+      "answer": 2,
+      "explanation": "Geometric features use key points and require less storage. Appearance features store pixel-level details, which are larger."
+    },
+    {
+      "text": "Sequential information helps in expression recognition.",
+      "options": ["True", "False"],
+      "answer": 0,
+      "explanation": "Sequence captures changes over time, improving recognition. False is incorrect because static data misses motion."
+    },
+    {
+      "text": "Which of the following features do not provide motion information?",
+      "options": [
+        "Motion History Images (MHI)",
+        "Local Binary Patterns (LBP)",
+        "Histogram of Gradients (HOG)",
+        "Optical Flow"
+      ],
+      "answer": 1,
+      "explanation": "LBP captures texture, not motion. MHI, HOG, and Optical Flow include motion or gradient information."
+    },
+    {
+      "text": "The relative position of the persons in a group has no effect on the group-level affect.",
+      "options": ["True", "False"],
+      "answer": 1,
+      "explanation": "Group positioning influences collective emotion perception. True is incorrect because spatial relations matter."
+    },
+    {
+      "text": "When dealing with subtle facial expressions, which of the following is not a setback?",
+      "options": [
+        "Self-occlusion",
+        "Illumination",
+        "Individual variability",
+        "Pose variation"
+      ],
+      "answer": 1,
+      "explanation": "Illumination can be adjusted and is less of a limitation compared to others. Self-occlusion, pose, and variability are major challenges."
+    }
+  ]
             },
             {
                 name: "Assignment 5",
