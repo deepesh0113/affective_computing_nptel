@@ -33,7 +33,35 @@
       <div><b>Remaining Time:</b> <span id="timer">01:00:00</span></div>
     </div>
   </div>
+  <!-- Year Selection Modal -->
+  <div id="year-selector-modal" class="year-selector-modal">
+    <div class="year-selector-content">
+      <h2>Select Test Years</h2>
+      <p class="modal-subtitle">Choose which years you want to practice</p>
+      
+      <div class="year-options">
+        <label class="year-option">
+          <input type="checkbox" id="year-2025" value="2025" checked>
+          <span class="year-label">2025 Questions</span>
+          <span class="year-count">(119 questions)</span>
+        </label>
+        <label class="year-option">
+          <input type="checkbox" id="year-2026" value="2026" checked>
+          <span class="year-label">2026 Questions</span>
+          <span class="year-count">(120 questions)</span>
+        </label>
+      </div>
+
+      <div class="question-summary" id="question-summary">
+        Total: <span id="total-questions">239</span> Questions
+      </div>
+
+      <button id="year-apply-btn" class="year-apply-btn">Start Test</button>
+    </div>
+  </div>
+
   <div class="practice-body">
+
     <div class="practice-left">
       <div id="question-block"></div>
       <div id="practice-nav" class="practice-nav"></div>

@@ -7,6 +7,162 @@ body {
   color: #10264c;
 }
 
+/* Year Selector Modal - Centered Popup */
+.year-selector-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.year-selector-modal.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.year-selector-content {
+  background: white;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.25);
+  min-width: 400px;
+  max-width: 500px;
+  text-align: center;
+  animation: slideUp 0.4s ease-out;
+}
+
+.year-selector-content h2 {
+  color: #1e59c5;
+  font-size: 2rem;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.modal-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+  line-height: 1.5;
+}
+
+.year-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.year-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 2px solid #e0e8f5;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f8fbff;
+}
+
+.year-option:hover {
+  border-color: #1e59c5;
+  background: #f0f6ff;
+  transform: translateX(4px);
+}
+
+.year-option input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #1e59c5;
+  flex-shrink: 0;
+}
+
+.year-label {
+  font-weight: 600;
+  color: #1e59c5;
+  font-size: 1.05rem;
+  flex: 1;
+  text-align: left;
+}
+
+.year-count {
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.question-summary {
+  background: linear-gradient(135deg, #e8f0ff, #f0f6ff);
+  padding: 16px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border: 1px solid #d4e2ff;
+}
+
+.question-summary span {
+  color: #1e59c5;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.year-apply-btn {
+  background: linear-gradient(90deg, #1e59c5, #2682f0);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 89, 197, 0.3);
+  letter-spacing: 0.3px;
+}
+
+.year-apply-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(30, 89, 197, 0.4);
+}
+
+.year-apply-btn:active {
+  transform: translateY(-1px);
+}
+
+
+
 
 .practice-header {
   display: flex;
