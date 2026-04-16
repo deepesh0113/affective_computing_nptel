@@ -1122,15 +1122,15 @@ const years = [
                         "explanation": "Anticipatory computing predicts user behavior and needs. Other options are secondary system goals."
                     },
                     {
-                        "text": "From an ethics perspective, what is a significant concern regarding affect-sensing apps in relation to emotional dependency?",
-                        "options": [
+                        text: "From an ethics perspective, what is a major concern regarding affect-sensing apps and emotional dependency?",
+                        options: [
                             "User engagement",
                             "Privacy intrusion",
-                            "Emotional manipulation",
-                            "User addiction"
+                            "User addiction",
+                            "Emotional manipulation"
                         ],
-                        "answer": 2,
-                        "explanation": "Apps may manipulate emotions, creating dependency. Other options are related but not the main ethical concern here."
+                        answer: 2,
+                        explanation: "Affect-sensing apps can make users emotionally dependent on them for support and validation, leading to addictive usage and reduced ability to manage emotions independently."
                     },
                     {
                         "text": "What is a potential ethical concern related to facial expression recognition?",
@@ -2470,8 +2470,8 @@ const years = [
                             "User addiction",
                             "Emotional manipulation"
                         ],
-                        answer: 3,
-                        explanation: "These systems can influence users’ emotions, raising concerns about manipulation. Other options are secondary."
+                        answer: 2,
+                        explanation: "Affect-sensing apps can make users emotionally dependent on them for support and validation, leading to addictive usage and reduced ability to manage emotions independently."
                     },
                     {
                         text: "Targeted advertising can improve user experience, but it also increases the user's vulnerability to privacy risks.",
