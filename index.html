@@ -13,6 +13,8 @@
 <!-- YAHAN PASSWORD CODE PASTE KARO -->
 <script>
 (async () => {
+    document.documentElement.style.display = "none";
+
     async function sha256(text) {
         const buffer = await crypto.subtle.digest(
             "SHA-256",
@@ -42,6 +44,8 @@
             "<h1 style='text-align:center;margin-top:100px'>Wrong Password</h1>";
         return;
     }
+
+    document.documentElement.style.display = "block";
 })();
 </script>
 
