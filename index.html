@@ -1,88 +1,453 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Affective Computing Assignments</title>
-  <link rel="stylesheet" href="style.css">
-
-  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-  <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif?collect-dnt=true" alt=""
-      referrerpolicy="no-referrer-when-downgrade" /></noscript>
-
- 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5C7800ZKQ2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-5C7800ZKQ2');
-  </script>
-
-</head>
-
-<body>
-  <img src="home_bg.jpg" alt="Background Wallpaper"
-    style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;">
-  <div class="container">
-    <h1><u>Affective Computing Assignments</u></h1>
-    <h1><u>(Practice purposes)</u></h1>
-
-    <div id="year-select">
-      <label for="year">Select Year:</label>
-      <select id="year">
-        <option value="">-- Select Year --</option>
-      </select>
-    </div>
-
-    <div id="assignment-select" style="display: none;">
-      <label for="assignment">Choose Assignment:</label>
-      <select id="assignment">
-        <option value="">-- Select Assignment --</option>
-      </select>
-      <button id="load-assignment">Load</button>
-    </div>
-    <button id="practice-mode" onclick="window.open('practice.html', '_blank')">
-      Launch Practice Exam
-    </button>
-    <div id="quiz"></div>
-    <div id="result"></div>
-  </div>
-  <button id="theme-toggle" aria-label="Toggle Theme" class="theme-button"></button>
-  <script src="main.js"></script>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affective Computing Assignments</title>
-    
-    <style>
-        /* Make the image container full-width */
-        .image-container {
-            width: 100%;
-            max-width: 100%;
-            overflow: hidden; /* Prevents overflow if image dimensions go out of bounds */
-        }
-
-        /* Make the image responsive */
-        .responsive-image {
-            width: 100%; /* The image will take up 100% of the container's width */
-            height: auto; /* Maintain aspect ratio */
-            display: block; /* Prevents space below the image */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp English Spelling Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
 </head>
 <body>
 
-    <div class="image-container">
-        <img src="end.jpg" alt="Your Image" class="responsive-image">
-    </div>
+<!-- YAHAN PASSWORD CODE PASTE KARO -->
+<script>
+(async () => {
+    async function sha256(text) {
+        const buffer = await crypto.subtle.digest(
+            "SHA-256",
+            new TextEncoder().encode(text)
+        );
+        return [...new Uint8Array(buffer)]
+            .map(b => b.toString(16).padStart(2, "0"))
+            .join("");
+    }
 
+    // Password = MyUPSC@2026#Study$Plan
+    const PASSWORD_HASH =
+        "d58716d763d0c55caab50f9c5c6503e1ef5fd0f4e2a1f5965c4d21a83cf7b51d";
+
+    const enteredPassword = prompt("Enter Password");
+
+    if (!enteredPassword) {
+        document.body.innerHTML =
+            "<h1 style='text-align:center;margin-top:100px'>Access Denied</h1>";
+        return;
+    }
+
+    const hash = await sha256(enteredPassword);
+
+    if (hash !== PASSWORD_HASH) {
+        document.body.innerHTML =
+            "<h1 style='text-align:center;margin-top:100px'>Wrong Password</h1>";
+        return;
+    }
+})();
+</script>
+
+<!-- ===================== SPLASH SCREEN ===================== -->
+<div id="splash-screen" class="splash">
+  <div class="splash-logo">
+    <div class="splash-icon">✏️</div>
+    <h1>Spelling Trainer</h1>
+    <p>Master English. One word at a time.</p>
+    <div class="splash-loader"><div class="loader-bar"></div></div>
+  </div>
+</div>
+
+<!-- ===================== MAIN APP WRAPPER ===================== -->
+<div id="app" class="app hidden">
+
+  <!-- TOP NAV BAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn" id="menu-btn" aria-label="Menu">☰</button>
+      <span class="topbar-title" id="topbar-title">Home</span>
+    </div>
+    <div class="topbar-right">
+      <span class="xp-badge" id="topbar-xp">⚡0 XP</span>
+      <span class="streak-badge" id="topbar-streak">🔥0</span>
+      <button class="icon-btn" id="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn" id="sound-toggle" aria-label="Toggle sound">🔊</button>
+    </div>
+  </header>
+
+  <!-- SIDE DRAWER -->
+  <nav class="drawer hidden" id="side-drawer">
+    <div class="drawer-header">
+      <div class="drawer-avatar">🎓</div>
+      <div>
+        <div class="drawer-name">Learner</div>
+        <div class="drawer-level" id="drawer-level">Level 1 · Beginner</div>
+      </div>
+      <button class="icon-btn" id="close-drawer">✕</button>
+    </div>
+    <ul class="drawer-nav">
+      <li data-screen="home">🏠 Home</li>
+      <li data-screen="practice">📝 Practice Mode</li>
+      <li data-screen="sentence">💬 Sentence Correction</li>
+      <li data-screen="typing">⌨️ Typing Challenge</li>
+      <li data-screen="quiz">🎯 Quiz Levels</li>
+      <li data-screen="daily">📅 Daily Challenge</li>
+      <li data-screen="stats">📊 Statistics</li>
+      <li data-screen="search">🔍 Search Word</li>
+      <li data-screen="mistakes">❌ Review Mistakes</li>
+      <li class="drawer-divider"></li>
+      <li id="reset-btn">🔄 Reset Progress</li>
+      <li id="export-btn">📤 Export Progress</li>
+    </ul>
+  </nav>
+  <div class="drawer-overlay hidden" id="drawer-overlay"></div>
+
+  <!-- HEARTS BAR -->
+  <div class="hearts-bar" id="hearts-bar">
+    <span id="hearts-display">❤️❤️❤️❤️❤️</span>
+  </div>
+
+  <!-- =================== SCREENS =================== -->
+  <main class="screens">
+
+    <!-- HOME SCREEN -->
+    <section class="screen active" id="screen-home">
+      <div class="home-greeting" id="home-greeting">Good morning! 👋</div>
+      <div class="home-quote" id="home-quote">"Practice makes perfect."</div>
+
+      <div class="stats-grid">
+        <div class="stat-card flame">
+          <div class="stat-icon">🔥</div>
+          <div class="stat-value" id="home-streak">0</div>
+          <div class="stat-label">Day Streak</div>
+        </div>
+        <div class="stat-card bolt">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-value" id="home-xp">0</div>
+          <div class="stat-label">XP Points</div>
+        </div>
+        <div class="stat-card target">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-value" id="home-accuracy">0%</div>
+          <div class="stat-label">Accuracy</div>
+        </div>
+        <div class="stat-card book">
+          <div class="stat-icon">📖</div>
+          <div class="stat-value" id="home-words">0</div>
+          <div class="stat-label">Words Done</div>
+        </div>
+      </div>
+
+      <div class="level-card">
+        <div class="level-header">
+          <span>Level <strong id="home-level">1</strong></span>
+          <span class="level-name" id="home-level-name">Beginner</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="home-level-bar" style="width:0%"></div>
+        </div>
+        <div class="level-xp-label"><span id="home-level-xp">0</span> / <span id="home-level-max">100</span> XP</div>
+      </div>
+
+      <div class="badges-section">
+        <h3>Achievements</h3>
+        <div class="badges-row" id="badges-row">
+          <!-- Badges injected by JS -->
+        </div>
+      </div>
+
+      <div class="home-actions">
+        <button class="btn-primary btn-big" data-screen="practice">Continue Learning 🚀</button>
+        <button class="btn-secondary" data-screen="daily">Today's Challenge 📅</button>
+      </div>
+    </section>
+
+    <!-- PRACTICE MODE SCREEN -->
+    <section class="screen" id="screen-practice">
+      <div class="screen-header">
+        <h2>📝 Practice Mode</h2>
+        <div class="practice-level-select">
+          <select id="practice-level-select">
+            <option value="0">All Levels</option>
+            <option value="1">Level 1 – WhatsApp Words</option>
+            <option value="2">Level 2 – Common English</option>
+            <option value="3">Level 3 – Academic</option>
+            <option value="4">Level 4 – UPSC</option>
+            <option value="5">Level 5 – Advanced</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="question-card" id="practice-card">
+        <div class="question-label">Correct this spelling:</div>
+        <div class="wrong-word" id="practice-wrong-word">---</div>
+        <div class="word-hint" id="practice-hint"></div>
+        <input type="text" id="practice-input" class="answer-input" placeholder="Type the correct spelling..." autocomplete="off" autocorrect="off" spellcheck="false" />
+        <div class="answer-feedback hidden" id="practice-feedback"></div>
+        <div class="explanation-box hidden" id="practice-explanation"></div>
+        <div class="btn-row">
+          <button class="btn-primary" id="practice-check-btn">Check ✓</button>
+          <button class="btn-secondary" id="practice-skip-btn">Skip →</button>
+        </div>
+      </div>
+
+      <div class="practice-progress">
+        <div class="progress-track slim">
+          <div class="progress-fill" id="practice-progress-bar" style="width:0%"></div>
+        </div>
+        <div class="practice-score-row">
+          <span>✅ <span id="practice-correct-count">0</span></span>
+          <span>❌ <span id="practice-wrong-count">0</span></span>
+          <span>🔄 <span id="practice-queue-count">0</span> in queue</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SENTENCE CORRECTION SCREEN -->
+    <section class="screen" id="screen-sentence">
+      <div class="screen-header">
+        <h2>💬 Sentence Correction</h2>
+        <p class="screen-sub">Type WhatsApp-style sentences to fix them</p>
+      </div>
+      <div class="sentence-card">
+        <label class="input-label">Enter your sentence:</label>
+        <textarea id="sentence-input" class="sentence-textarea" placeholder="e.g., mujhe pta nhi h" rows="3"></textarea>
+        <button class="btn-primary" id="sentence-check-btn">Correct It ✨</button>
+      </div>
+      <div class="sentence-result hidden" id="sentence-result">
+        <div class="result-label">Corrected Sentence:</div>
+        <div class="corrected-text" id="sentence-corrected"></div>
+        <div class="word-diff" id="sentence-diff"></div>
+      </div>
+      <div class="example-sentences">
+        <h3>Try These Examples</h3>
+        <div class="example-list" id="example-list">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPING CHALLENGE SCREEN -->
+    <section class="screen" id="screen-typing">
+      <div class="screen-header">
+        <h2>⌨️ Typing Challenge</h2>
+        <p class="screen-sub">Type the sentence exactly as shown</p>
+      </div>
+      <div class="typing-stats-row">
+        <div class="typing-stat"><span id="typing-wpm">0</span><small>WPM</small></div>
+        <div class="typing-stat"><span id="typing-accuracy-val">100%</span><small>Accuracy</small></div>
+        <div class="typing-stat"><span id="typing-errors">0</span><small>Errors</small></div>
+        <div class="typing-stat"><span id="typing-timer">0s</span><small>Time</small></div>
+      </div>
+      <div class="typing-card">
+        <div class="typing-target" id="typing-target-display"></div>
+        <textarea id="typing-input" class="typing-textarea" placeholder="Start typing here..." autocorrect="off" spellcheck="false"></textarea>
+        <div class="btn-row">
+          <button class="btn-primary" id="typing-new-btn">New Sentence 🔄</button>
+          <button class="btn-secondary" id="typing-submit-btn">Submit ✓</button>
+        </div>
+      </div>
+      <div class="typing-result hidden" id="typing-result">
+        <div class="result-card">
+          <h3>Result 🏆</h3>
+          <div class="result-grid">
+            <div><strong id="res-wpm">0</strong><span>WPM</span></div>
+            <div><strong id="res-acc">0%</strong><span>Accuracy</span></div>
+            <div><strong id="res-err">0</strong><span>Errors</span></div>
+            <div><strong id="res-time">0s</strong><span>Time</span></div>
+          </div>
+          <div class="xp-earned" id="typing-xp-earned"></div>
+          <button class="btn-primary" id="typing-again-btn">Practice Again 🔁</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ LEVELS SCREEN -->
+    <section class="screen" id="screen-quiz">
+      <div class="screen-header">
+        <h2>🎯 Quiz Levels</h2>
+        <p class="screen-sub">Score 80%+ to unlock the next level</p>
+      </div>
+      <div class="quiz-levels-list" id="quiz-levels-list">
+        <!-- Injected by JS -->
+      </div>
+
+      <!-- Quiz Active Panel (hidden until quiz starts) -->
+      <div class="quiz-active hidden" id="quiz-active">
+        <div class="quiz-header-row">
+          <span id="quiz-level-label">Level 1</span>
+          <span id="quiz-progress-label">1 / 10</span>
+        </div>
+        <div class="progress-track slim">
+          <div class="progress-fill" id="quiz-progress-bar" style="width:0%"></div>
+        </div>
+        <div class="question-card">
+          <div class="question-label" id="quiz-question-type">Correct this spelling:</div>
+          <div class="wrong-word" id="quiz-wrong-word">---</div>
+          <div class="quiz-options" id="quiz-options"></div>
+          <div class="answer-feedback hidden" id="quiz-feedback"></div>
+        </div>
+        <button class="btn-secondary" id="quiz-quit-btn">Quit Quiz</button>
+      </div>
+
+      <!-- Quiz Result Panel -->
+      <div class="quiz-result hidden" id="quiz-result">
+        <div class="result-card">
+          <div class="result-emoji" id="quiz-result-emoji">🏆</div>
+          <h3 id="quiz-result-title">Quiz Complete!</h3>
+          <div class="result-grid">
+            <div><strong id="quiz-res-correct">0</strong><span>Correct</span></div>
+            <div><strong id="quiz-res-wrong">0</strong><span>Wrong</span></div>
+            <div><strong id="quiz-res-score">0%</strong><span>Score</span></div>
+            <div><strong id="quiz-res-xp">+0</strong><span>XP</span></div>
+          </div>
+          <div id="quiz-unlock-msg" class="unlock-msg hidden"></div>
+          <button class="btn-primary" id="quiz-retry-btn">Try Again 🔁</button>
+          <button class="btn-secondary" id="quiz-back-btn">Back to Levels</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY CHALLENGE SCREEN -->
+    <section class="screen" id="screen-daily">
+      <div class="screen-header">
+        <h2>📅 Daily Challenge</h2>
+        <p class="screen-sub" id="daily-date"></p>
+      </div>
+      <div class="daily-status-card" id="daily-status-card">
+        <div class="daily-tasks" id="daily-tasks">
+          <!-- Injected by JS -->
+        </div>
+        <button class="btn-primary btn-big" id="daily-start-btn">Start Today's Challenge 🚀</button>
+        <div class="daily-completed hidden" id="daily-completed">
+          <div class="completion-icon">🎉</div>
+          <h3>Daily Challenge Complete!</h3>
+          <p>Come back tomorrow for a new challenge.</p>
+          <div class="xp-earned" id="daily-xp-earned">+50 XP earned!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS SCREEN -->
+    <section class="screen" id="screen-stats">
+      <div class="screen-header">
+        <h2>📊 Statistics</h2>
+      </div>
+      <div class="stats-overview-grid">
+        <div class="stat-card-lg">
+          <div class="stat-icon">✅</div>
+          <div class="stat-value" id="stats-total-correct">0</div>
+          <div class="stat-label">Total Correct</div>
+        </div>
+        <div class="stat-card-lg">
+          <div class="stat-icon">❌</div>
+          <div class="stat-value" id="stats-total-wrong">0</div>
+          <div class="stat-label">Total Wrong</div>
+        </div>
+        <div class="stat-card-lg">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-value" id="stats-accuracy">0%</div>
+          <div class="stat-label">Accuracy</div>
+        </div>
+        <div class="stat-card-lg">
+          <div class="stat-icon">🔥</div>
+          <div class="stat-value" id="stats-best-streak">0</div>
+          <div class="stat-label">Best Streak</div>
+        </div>
+      </div>
+
+      <div class="chart-section">
+        <h3>Progress (Last 7 Days)</h3>
+        <div class="chart-container">
+          <canvas id="progress-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="weak-words-section">
+        <h3>⚠️ Weak Words (Most Missed)</h3>
+        <div class="weak-words-list" id="weak-words-list">
+          <p class="empty-msg">No data yet. Start practicing!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH SCREEN -->
+    <section class="screen" id="screen-search">
+      <div class="screen-header">
+        <h2>🔍 Search Word</h2>
+      </div>
+      <div class="search-box-wrap">
+        <input type="text" id="search-input" class="search-input" placeholder="Type a word to check or find..." autocorrect="off" spellcheck="false" />
+        <button class="btn-primary" id="search-btn">Search</button>
+      </div>
+      <div class="search-results" id="search-results">
+        <!-- Injected by JS -->
+      </div>
+    </section>
+
+    <!-- MISTAKES SCREEN -->
+    <section class="screen" id="screen-mistakes">
+      <div class="screen-header">
+        <h2>❌ Review Mistakes</h2>
+        <p class="screen-sub">Words you've gotten wrong</p>
+      </div>
+      <div class="mistakes-list" id="mistakes-list">
+        <p class="empty-msg">No mistakes recorded yet. Keep practicing!</p>
+      </div>
+      <button class="btn-secondary" id="clear-mistakes-btn">Clear All Mistakes</button>
+    </section>
+
+  </main><!-- /screens -->
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-screen="home">
+      <span class="nav-icon">🏠</span><span class="nav-label">Home</span>
+    </button>
+    <button class="nav-item" data-screen="practice">
+      <span class="nav-icon">📝</span><span class="nav-label">Practice</span>
+    </button>
+    <button class="nav-item" data-screen="quiz">
+      <span class="nav-icon">🎯</span><span class="nav-label">Quiz</span>
+    </button>
+    <button class="nav-item" data-screen="daily">
+      <span class="nav-icon">📅</span><span class="nav-label">Daily</span>
+    </button>
+    <button class="nav-item" data-screen="stats">
+      <span class="nav-icon">📊</span><span class="nav-label">Stats</span>
+    </button>
+  </nav>
+
+</div><!-- /app -->
+
+<!-- ===================== OVERLAYS ===================== -->
+
+<!-- XP Pop -->
+<div class="xp-popup hidden" id="xp-popup">+10 XP ⚡</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas" class="confetti-canvas hidden"></canvas>
+
+<!-- Toast Notification -->
+<div class="toast hidden" id="toast"></div>
+
+<!-- Level Up Modal -->
+<div class="modal-overlay hidden" id="levelup-modal">
+  <div class="modal-card levelup">
+    <div class="modal-emoji">🎉</div>
+    <h2>Level Up!</h2>
+    <p id="levelup-text">You reached Level 2!</p>
+    <button class="btn-primary" id="levelup-close">Awesome! 🚀</button>
+  </div>
+</div>
+
+<!-- Badge Modal -->
+<div class="modal-overlay hidden" id="badge-modal">
+  <div class="modal-card badge-card">
+    <div class="modal-emoji" id="badge-emoji">🏅</div>
+    <h2>Badge Earned!</h2>
+    <p id="badge-name">First Steps</p>
+    <button class="btn-primary" id="badge-close">Claim 🎁</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
